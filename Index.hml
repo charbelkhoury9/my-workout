@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complete Medical Fitness & Conditioning Plan</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f8f9fa;
+        }
+        .header {
+            background-color: #1e3a8a;
+            color: white;
+            padding: 30px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        .header h1 { margin: 0; font-size: 26px; }
+        .header p { margin: 10px 0 0 0; opacity: 0.9; font-size: 16px; }
+        .section {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 25px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        h2 {
+            color: #1e3a8a;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 8px;
+            margin-top: 0;
+            font-size: 20px;
+        }
+        h3 { color: #2563eb; font-size: 16px; margin-bottom: 5px; }
+        .safety-box {
+            background-color: #fef2f2;
+            border-left: 5px solid #dc2626;
+            padding: 15px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+        }
+        .safety-title { color: #991b1b; font-weight: bold; margin-bottom: 10px; }
+        .rule-card {
+            background: #f0fdf4;
+            border-left: 4px solid #16a34a;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 4px;
+        }
+        .rule-title { font-weight: bold; color: #14532d; }
+        .schedule-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
+        .schedule-table th, .schedule-table td { border: 1px solid #e5e7eb; padding: 12px; text-align: left; }
+        .schedule-table th { background-color: #f3f4f6; color: #1e3a8a; }
+        .exercise-card {
+            border: 1px solid #e5e7eb;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 15px;
+            background-color: #fafafa;
+        }
+        .diagram {
+            background-color: #1e293b;
+            color: #38bdf8;
+            font-family: monospace;
+            padding: 15px;
+            border-radius: 6px;
+            overflow-x: auto;
+            margin: 10px 0;
+            font-size: 13px;
+            line-height: 1.4;
+        }
+        .video-btn {
+            display: inline-block;
+            background-color: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 13px;
+            font-weight: 500;
+            margin-top: 8px;
+        }
+        ul { padding-left: 20px; margin: 8px 0; }
+        li { margin-bottom: 5px; }
+    </style>
+    <script>
+        // Service Worker Registration for Native App Installation
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then(reg => console.log('PWA Service Worker Active:', reg.scope))
+                    .catch(err => console.error('Registration failed:', err));
+            });
+        }
+    </script>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Complete Medical Fitness & Conditioning Plan</h1>
+        <p>Optimized For Joint, Kidney, and Vascular Health</p>
+    </div>
+
+    <div class="section">
+        <h2>1. Non-Negotiable Safety Checklist</h2>
+        <div class="rule-card">
+            <span class="rule-title">The Temperature Rule:</span> Air-conditioned environment only.
+        </div>
+        <div class="rule-card">
+            <span class="rule-title">The Hydration Rule:</span> 500ml water 30 minutes before, continuous sips.
+        </div>
+        <div class="rule-card">
+            <span class="rule-title">The Breathing Rule:</span> Continuous mouth exhalation during exertion.
+        </div>
+        <div class="safety-box">
+            <div class="safety-title">⚠️ Prohibited Movements</div>
+            <ul>
+                <li>No Overhead Pressing (Rotator Cuff protection)</li>
+                <li>No Deep Bench Pressing (Floor/Torso plane limit)</li>
+                <li>No Heavy Vertical Loading (L5/S1 Anterolisthesis protection)</li>
+                <li>No Lumbar Hyperextension</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2>2. Weekly Schedule Overview</h2>
+        <table class="schedule-table">
+            <thead>
+                <tr><th>Day</th><th>Focus</th><th>Stress Level</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Mon</td><td>Workout A: Spine & Lower Body</td><td>Low Impact</td></tr>
+                <tr><td>Tue</td><td>Active Recovery: Walking Pad</td><td>Very Low Impact</td></tr>
+                <tr><td>Wed</td><td>Workout B: Shoulder-Safe Upper</td><td>Protected</td></tr>
+                <tr><td>Thu</td><td>Rest Day</td><td>None</td></tr>
+                <tr><td>Fri</td><td>Workout C: Full Body Metabolic</td><td>Controlled</td></tr>
+                <tr><td>Sat</td><td>Active Recovery: Walking Pad</td><td>Very Low Impact</td></tr>
+                <tr><td>Sun</td><td>Rest Day</td><td>None</td></tr>
+            </tbody>
+        </table>
+    </div>
+
+    <div class="section">
+        <h2>3. Detailed Workout Manual</h2>
+        <h2 style="color: #2563eb; font-size: 18px;">Workout A</h2>
+        <div class="exercise-card">
+            <h3>1. The McGill Bird-Dog</h3>
+            <ul><li>3 sets x 6 reps per side (4s holds). Flat table spine.</li></ul>
+<pre class="diagram">
+[Arm] ----> O [Head Neutral]
+        =====|===== (Spine Flat)
+ [Leg] <----|     |
+</pre>
+            <a href="https://www.youtube.com/watch?v=RIZHXOJV5oE" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>2. Glute Bridges</h3>
+            <ul><li>3 sets x 12-15 reps. Drive through heels. Stop at diagonal knee-to-shoulder line.</li></ul>
+<pre class="diagram">
+     /\ (Knees)
+    /  \
+  O_____\ (Feet Flat)
+</pre>
+            <a href="https://www.youtube.com/watch?v=bpUudcsZQ8g" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>3. Supported Split Squats</h3>
+            <ul><li>3 sets x 10-12 reps per leg. Keep spine perfectly vertical.</li></ul>
+            <a href="https://www.youtube.com/watch?v=7LpLZOdz68A" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <h2 style="color: #2563eb; font-size: 18px;">Workout B</h2>
+        <div class="exercise-card">
+            <h3>1. Dumbbell Floor Press (Neutral Grip)</h3>
+            <ul><li>3 sets x 12-15 reps. Palms facing each other. Floor limits depth.</li></ul>
+<pre class="diagram">
+[DB]   [DB]
+ |  O   | 
+========= (Floor Safety Line)
+</pre>
+            <a href="https://www.youtube.com/shorts/5ZczEjwowQL8" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>2. Supported Incline Rows</h3>
+            <ul><li>3 sets x 12-15 reps. Bench chest support. Pull back to hip crease.</li></ul>
+            <a href="https://www.youtube.com/watch?v=lqpSTvWnBGo" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>3. Scapular Plane Lateral Raises</h3>
+            <ul><li>3 sets x 15 reps. Angle weights 30° forward into a broad "V" shape.</li></ul>
+<pre class="diagram">
+     [Head]
+     /    \
+  [Arm]  [Arm] --> 30° V-Angle
+</pre>
+            <a href="https://www.youtube.com/shorts/6R4frc6frM0" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>4. Modified Deadbugs</h3>
+            <ul><li>3 sets x 10 alternating reps. Back explicitly glued to the mat. Heel taps.</li></ul>
+            <a href="https://www.youtube.com/watch?v=GbSC02oU3To" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <h2 style="color: #2563eb; font-size: 18px;">Workout C</h2>
+        <div class="exercise-card">
+            <h3>1. Standing Pallof Press</h3>
+            <ul><li>3 sets x 12 reps. Resist lateral band rotation. Core rigid.</li></ul>
+            <a href="https://row.gymshark.com/blog/article/how-to-do-a-palloff-press" target="_blank" class="video-btn">Photo Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>2. Chair/Box Squats</h3>
+            <ul><li>3 sets x 12-15 reps. Graze seat with glutes, drive back up immediately.</li></ul>
+            <a href="https://www.youtube.com/watch?v=7LpLZOdz68A" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>3. Hammer Curls</h3>
+            <ul><li>2 sets x 12 reps. Thumbs point up to ceiling (protects biceps tendon).</li></ul>
+            <a href="https://www.youtube.com/shorts/OThvskzK9bE" target="_blank" class="video-btn">Video Guide</a>
+        </div>
+    </div>
+</body>
+</html>
