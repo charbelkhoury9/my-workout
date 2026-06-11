@@ -4,11 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Complete Medical Fitness & Conditioning Plan</title>
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#1e3a8a">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
     <style>
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
@@ -52,7 +47,11 @@
             border-radius: 4px;
             margin-bottom: 20px;
         }
-        .safety-title { color: #991b1b; font-weight: bold; margin-bottom: 10px; }
+        .safety-title {
+            color: #991b1b;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
         .rule-card {
             background: #f0fdf4;
             border-left: 4px solid #16a34a;
@@ -61,8 +60,16 @@
             border-radius: 4px;
         }
         .rule-title { font-weight: bold; color: #14532d; }
-        .schedule-table { width: 100%; border-collapse: collapse; margin: 15px 0; }
-        .schedule-table th, .schedule-table td { border: 1px solid #e5e7eb; padding: 12px; text-align: left; }
+        .schedule-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        .schedule-table th, .schedule-table td {
+            border: 1px solid #e5e7eb;
+            padding: 12px;
+            text-align: left;
+        }
         .schedule-table th { background-color: #f3f4f6; color: #1e3a8a; }
         .exercise-card {
             border: 1px solid #e5e7eb;
@@ -92,46 +99,43 @@
             font-size: 13px;
             font-weight: 500;
             margin-top: 8px;
+            transition: background-color 0.2s;
         }
+        .video-btn:hover { background-color: #1d4ed8; }
         ul { padding-left: 20px; margin: 8px 0; }
         li { margin-bottom: 5px; }
     </style>
-    <script>
-        // Service Worker Registration for Native App Installation
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('sw.js')
-                    .then(reg => console.log('PWA Service Worker Active:', reg.scope))
-                    .catch(err => console.error('Registration failed:', err));
-            });
-        }
-    </script>
 </head>
 <body>
 
     <div class="header">
         <h1>Complete Medical Fitness & Conditioning Plan</h1>
-        <p>Optimized For Joint, Kidney, and Vascular Health</p>
+        <p>100% Unabridged & Optimized For Joint, Kidney, and Vascular Health</p>
     </div>
 
     <div class="section">
         <h2>1. Non-Negotiable Safety Checklist</h2>
+        <p>This routine is engineered to work around structural back limitations (L4/L5 & L5/S1), right rotator cuff changes, and cervical segments, while protecting your remaining kidney and maintaining optimal blood pressure control.</p>
+        
         <div class="rule-card">
-            <span class="rule-title">The Temperature Rule:</span> Air-conditioned environment only.
+            <span class="rule-title">The Temperature Rule:</span> Perform all exercises and walking pad sessions in a fully air-conditioned, cool room to avoid heat intolerance or sudden cardiovascular flushing.
         </div>
+        
         <div class="rule-card">
-            <span class="rule-title">The Hydration Rule:</span> 500ml water 30 minutes before, continuous sips.
+            <span class="rule-title">The Hydration Rule:</span> To safeguard your single kidney while using blood pressure support that includes a diuretic, drink 500ml of water 30 minutes before training and sip fluids constantly.
         </div>
+
         <div class="rule-card">
-            <span class="rule-title">The Breathing Rule:</span> Continuous mouth exhalation during exertion.
+            <span class="rule-title">The Breathing Rule:</span> Never hold your breath or strain aggressively (avoid the Valsalva maneuver). Exhale smoothly through your mouth during the lifting phase of every repetition.
         </div>
+
         <div class="safety-box">
-            <div class="safety-title">⚠️ Prohibited Movements</div>
+            <div class="safety-title">⚠️ Strictly Prohibited ("The No-Go List")</div>
             <ul>
-                <li>No Overhead Pressing (Rotator Cuff protection)</li>
-                <li>No Deep Bench Pressing (Floor/Torso plane limit)</li>
-                <li>No Heavy Vertical Loading (L5/S1 Anterolisthesis protection)</li>
-                <li>No Lumbar Hyperextension</li>
+                <li><strong>No Overhead Pressing:</strong> Safely bypasses subacromial pinching across the right supraspinatus.</li>
+                <li><strong>No Deep Chest Pressing:</strong> Elbows must always stop at the level of the floor or torso.</li>
+                <li><strong>No Vertical Spine Compression:</strong> No heavy standing loads or weights resting across the shoulders to protect the L5/S1 slippage point.</li>
+                <li><strong>No Lumbar Hyperextension:</strong> Never allow your lower back to arch backward under tension.</li>
             </ul>
         </div>
     </div>
@@ -140,104 +144,259 @@
         <h2>2. Weekly Schedule Overview</h2>
         <table class="schedule-table">
             <thead>
-                <tr><th>Day</th><th>Focus</th><th>Stress Level</th></tr>
+                <tr>
+                    <th>Day</th>
+                    <th>Activity Focus</th>
+                    <th>Spine & Joint Stress Level</th>
+                </tr>
             </thead>
             <tbody>
-                <tr><td>Mon</td><td>Workout A: Spine & Lower Body</td><td>Low Impact</td></tr>
-                <tr><td>Tue</td><td>Active Recovery: Walking Pad</td><td>Very Low Impact</td></tr>
-                <tr><td>Wed</td><td>Workout B: Shoulder-Safe Upper</td><td>Protected</td></tr>
-                <tr><td>Thu</td><td>Rest Day</td><td>None</td></tr>
-                <tr><td>Fri</td><td>Workout C: Full Body Metabolic</td><td>Controlled</td></tr>
-                <tr><td>Sat</td><td>Active Recovery: Walking Pad</td><td>Very Low Impact</td></tr>
-                <tr><td>Sun</td><td>Rest Day</td><td>None</td></tr>
+                <tr>
+                    <td><strong>Monday</strong></td>
+                    <td>Workout A: Spine Stability & Lower Body</td>
+                    <td>Low Impact / Spine Braced</td>
+                </tr>
+                <tr>
+                    <td><strong>Tuesday</strong></td>
+                    <td>Active Recovery: Indoor Walking Pad (30-45 mins)</td>
+                    <td>Very Low Impact</td>
+                </tr>
+                <tr>
+                    <td><strong>Wednesday</strong></td>
+                    <td>Workout B: Shoulder-Safe Upper Body & Core</td>
+                    <td>Joint-Protected / Non-Impinging</td>
+                </tr>
+                <tr>
+                    <td><strong>Thursday</strong></td>
+                    <td>Rest Day (Full Muscular Recovery)</td>
+                    <td>None</td>
+                </tr>
+                <tr>
+                    <td><strong>Friday</strong></td>
+                    <td>Workout C: Full Body Metabolic & Balance</td>
+                    <td>Controlled Core Stability</td>
+                </tr>
+                <tr>
+                    <td><strong>Saturday</strong></td>
+                    <td>Active Recovery: Indoor Walking Pad (30-45 mins)</td>
+                    <td>Very Low Impact</td>
+                </tr>
+                <tr>
+                    <td><strong>Sunday</strong></td>
+                    <td>Rest Day (Full Muscular Recovery)</td>
+                    <td>None</td>
+                </tr>
             </tbody>
         </table>
     </div>
 
     <div class="section">
         <h2>3. Detailed Workout Manual</h2>
-        <h2 style="color: #2563eb; font-size: 18px;">Workout A</h2>
+
+        <h2 style="color: #2563eb; font-size: 18px; margin-top: 20px;">Workout A: Spine Stability & Lower Body</h2>
+        
         <div class="exercise-card">
             <h3>1. The McGill Bird-Dog</h3>
-            <ul><li>3 sets x 6 reps per side (4s holds). Flat table spine.</li></ul>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 6 controlled repetitions per side (Hold for 4 seconds per rep).</li>
+                <li><strong>Form Cue:</strong> Keep your spine flat like a tabletop. Kick your heel straight back rather than up high into the air to prevent lower back arching.</li>
+            </ul>
 <pre class="diagram">
-[Arm] ----> O [Head Neutral]
-        =====|===== (Spine Flat)
- [Leg] <----|     |
+VISUAL ALIGNMENT (SIDE VIEW):
+
+[Extended Arm] ------>  O [Head neutral, looking straight down]
+                   =====|=====  &lt;-- Spine perfectly flat
+                        |     |
+     [Extended Leg] &lt;---|     |
 </pre>
-            <a href="https://www.youtube.com/watch?v=RIZHXOJV5oE" target="_blank" class="video-btn">Video Guide</a>
+            <a href="https://www.youtube.com/watch?v=RIZHXOJV5oE" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
         <div class="exercise-card">
-            <h3>2. Glute Bridges</h3>
-            <ul><li>3 sets x 12-15 reps. Drive through heels. Stop at diagonal knee-to-shoulder line.</li></ul>
+            <h3>2. Glute Bridges (Lying Flat)</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 12–15 repetitions.</li>
+                <li><strong>Form Cue:</strong> Squeeze your glutes and push through your heels. Stop lifting the second your body forms a straight diagonal line from knees to shoulders.</li>
+            </ul>
 <pre class="diagram">
-     /\ (Knees)
-    /  \
-  O_____\ (Feet Flat)
+VISUAL ALIGNMENT (SIDE VIEW AT TOP):
+
+         (Knees)
+           /\
+          /  \
+ (Hips)  /    \
+        /      \
+       O________\ (Feet flat on ground)
+  (Shoulders & Head flat)
 </pre>
-            <a href="https://www.youtube.com/watch?v=bpUudcsZQ8g" target="_blank" class="video-btn">Video Guide</a>
+            <a href="https://www.youtube.com/watch?v=bpUudcsZQ8g" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
         <div class="exercise-card">
-            <h3>3. Supported Split Squats</h3>
-            <ul><li>3 sets x 10-12 reps per leg. Keep spine perfectly vertical.</li></ul>
-            <a href="https://www.youtube.com/watch?v=7LpLZOdz68A" target="_blank" class="video-btn">Video Guide</a>
+            <h3>3. Supported Split Squats (Static Lunges)</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 10–12 repetitions per leg (Bodyweight only).</li>
+                <li><strong>Form Cue:</strong> Place one hand flat against a wall for balance. Drop your rear knee straight down toward the floor while keeping your spine long and perfectly vertical.</li>
+            </ul>
+<pre class="diagram">
+VISUAL ALIGNMENT (SIDE VIEW):
+
+       O   &lt;-- Torso straight and completely upright
+     --|--
+      / \
+     |   |
+    /     \
+  [Front] [Back Knee drops straight down]
+</pre>
+            <a href="https://www.youtube.com/watch?v=7LpLZOdz68A" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
-        <h2 style="color: #2563eb; font-size: 18px;">Workout B</h2>
+        <div class="exercise-card">
+            <h3>4. Indoor Walking Pad</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 20 minutes at a steady, conversational pace.</li>
+                <li><strong>Form Cue:</strong> Keep your chin slightly tucked and look forward. Avoid looking down at a phone screen to eliminate mechanical strain on your neck.</li>
+            </ul>
+        </div>
+
+
+        <h2 style="color: #2563eb; font-size: 18px; margin-top: 30px;">Workout B: Shoulder-Safe Upper Body & Core</h2>
+
         <div class="exercise-card">
             <h3>1. Dumbbell Floor Press (Neutral Grip)</h3>
-            <ul><li>3 sets x 12-15 reps. Palms facing each other. Floor limits depth.</li></ul>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 12–15 repetitions (Light to moderate weight).</li>
+                <li><strong>Form Cue:</strong> Lie flat on the floor. Turn your wrists so your palms face each other. The floor functions as an absolute safety barrier that stops deep elbow drop, protecting your right shoulder tear.</li>
+            </ul>
 <pre class="diagram">
-[DB]   [DB]
- |  O   | 
-========= (Floor Safety Line)
+VISUAL ALIGNMENT (FRONT VIEW):
+
+    [DB]     [DB]  &lt;-- Palms facing each other
+     |        |
+     |   O    |    &lt;-- Pressing straight up over chest
+     |___|____|
+   =============   &lt;-- Floor physically stops deep elbow drop
 </pre>
-            <a href="https://www.youtube.com/shorts/5ZczEjwowQL8" target="_blank" class="video-btn">Video Guide</a>
+            <a href="https://www.youtube.com/shorts/5ZczEjwowQL8" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
         <div class="exercise-card">
-            <h3>2. Supported Incline Rows</h3>
-            <ul><li>3 sets x 12-15 reps. Bench chest support. Pull back to hip crease.</li></ul>
-            <a href="https://www.youtube.com/watch?v=lqpSTvWnBGo" target="_blank" class="video-btn">Video Guide</a>
+            <h3>2. Supported Incline Dumbbell Rows</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 12–15 repetitions.</li>
+                <li><strong>Form Cue:</strong> Set an adjustable bench to a modest incline. Rest your chest against the support, let your arms hang, and pull the dumbbells back toward your hips instead of your chest.</li>
+            </ul>
+<pre class="diagram">
+VISUAL ALIGNMENT (SIDE VIEW):
+
+        O   &lt;-- Neck long and fully aligned
+       //   &lt;-- Chest fully supported by bench
+      // \  &lt;-- Pull dumbbells up toward your hip crease
+     //   \
+</pre>
+            <a href="https://www.youtube.com/watch?v=lqpSTvWnBGo" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
         <div class="exercise-card">
-            <h3>3. Scapular Plane Lateral Raises</h3>
-            <ul><li>3 sets x 15 reps. Angle weights 30° forward into a broad "V" shape.</li></ul>
+            <h3>3. Scapular Plane Lateral Raises (The "V" Raise)</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 15 repetitions (Very light weight).</li>
+                <li><strong>Form Cue:</strong> Raise your arms up to shoulder height, but angle them 30 degrees forward into a wide "V" shape rather than raising them out to your exact sides.</li>
+            </ul>
 <pre class="diagram">
-     [Head]
-     /    \
-  [Arm]  [Arm] --> 30° V-Angle
+VISUAL ALIGNMENT (BIRD'S-EYE VIEW FROM TOP):
+
+              [ Head ]
+              /      \
+             /        \
+            /          \
+     [Left Arm]       [Right Arm]
+     
+     *Arms angled 30° forward into a wide "V" to clear impingement*
 </pre>
-            <a href="https://www.youtube.com/shorts/6R4frc6frM0" target="_blank" class="video-btn">Video Guide</a>
+            <a href="https://www.youtube.com/shorts/6R4frc6frM0" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
         <div class="exercise-card">
             <h3>4. Modified Deadbugs</h3>
-            <ul><li>3 sets x 10 alternating reps. Back explicitly glued to the mat. Heel taps.</li></ul>
-            <a href="https://www.youtube.com/watch?v=GbSC02oU3To" target="_blank" class="video-btn">Video Guide</a>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 10 alternating repetitions.</li>
+                <li><strong>Form Cue:</strong> Press your lower back completely flat against the mat. Maintain zero gap under your spine while slowly lowering one heel down to tap the floor.</li>
+            </ul>
+<pre class="diagram">
+VISUAL ALIGNMENT (SIDE VIEW):
+
+      ||  ||  &lt;-- Arms stable, pointing straight up
+      ||__//  &lt;-- Knees bent at 90° in tabletop position
+      O====/  
+ =============  &lt;-- Lower back is glued completely flat to floor
+</pre>
+            <a href="https://www.youtube.com/watch?v=GbSC02oU3To" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
-        <h2 style="color: #2563eb; font-size: 18px;">Workout C</h2>
+
+        <h2 style="color: #2563eb; font-size: 18px; margin-top: 30px;">Workout C: Full Body Metabolic & Balance</h2>
+
         <div class="exercise-card">
-            <h3>1. Standing Pallof Press</h3>
-            <ul><li>3 sets x 12 reps. Resist lateral band rotation. Core rigid.</li></ul>
-            <a href="https://row.gymshark.com/blog/article/how-to-do-a-palloff-press" target="_blank" class="video-btn">Photo Guide</a>
+            <h3>1. Standing Pallof Press (Anti-Rotation Core)</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 12 controlled reps per side.</li>
+                <li><strong>Form Cue:</strong> Stand perpendicular to your resistance band anchored at chest height. Hold the band at your chest and press straight out. Stand completely rigid and do not let the band twist your torso.</li>
+            </ul>
+<pre class="diagram">
+VISUAL ALIGNMENT (BIRD'S-EYE VIEW FROM TOP):
+
+[Anchor Point] -----------> [ Hands ] &lt;-- Pressing straight out
+                              |
+                           [Chest]   &lt;-- Resisting the lateral pull
+                           [Hips]
+</pre>
+            <a href="https://row.gymshark.com/blog/article/how-to-do-a-palloff-press" target="_blank" class="video-btn">View Step-by-Step Guide</a>
         </div>
 
         <div class="exercise-card">
-            <h3>2. Chair/Box Squats</h3>
-            <ul><li>3 sets x 12-15 reps. Graze seat with glutes, drive back up immediately.</li></ul>
-            <a href="https://www.youtube.com/watch?v=7LpLZOdz68A" target="_blank" class="video-btn">Video Guide</a>
+            <h3>2. Box Squats (Bodyweight)</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 3 sets of 12–15 repetitions.</li>
+                <li><strong>Form Cue:</strong> Stand directly in front of a standard chair. Hips go back first. Lower yourself down until your glutes lightly graze the seat, then stand right back up. Do not sit completely down or plop.</li>
+            </ul>
+<pre class="diagram">
+VISUAL ALIGNMENT (SIDE VIEW):
+
+      O  &lt;-- Head up, spine long and upright
+      |  
+    __|_
+   |    | &lt;-- Glutes lightly tap the chair before driving back up
+  [Chair]
+</pre>
+            <a href="https://www.youtube.com/watch?v=7LpLZOdz68A" target="_blank" class="video-btn">View Video Demonstration</a>
         </div>
 
         <div class="exercise-card">
-            <h3>3. Hammer Curls</h3>
-            <ul><li>2 sets x 12 reps. Thumbs point up to ceiling (protects biceps tendon).</li></ul>
-            <a href="https://www.youtube.com/shorts/OThvskzK9bE" target="_blank" class="video-btn">Video Guide</a>
+            <h3>3. Hammer Curls (Light Weight)</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 2 sets of 12 repetitions.</li>
+                <li><strong>Form Cue:</strong> Perform curls with your thumbs pointing straight up toward the ceiling (neutral grip). This avoids stretching or aggravating your right biceps tendon sheath.</li>
+            </ul>
+            <a href="https://www.youtube.com/shorts/OThvskzK9bE" target="_blank" class="video-btn">View Video Demonstration</a>
+        </div>
+
+        <div class="exercise-card">
+            <h3>4. Indoor Walking Pad Interval</h3>
+            <ul>
+                <li><strong>Prescription:</strong> 15 minutes total time.</li>
+                <li><strong>Structure:</strong> Alternate between 2 minutes of brisk walking and 1 minute of a slow recovery pace. Keep a cool environment.</li>
+            </ul>
         </div>
     </div>
+
+    <div class="section">
+        <h2>4. Consistency & Fatigue Management</h2>
+        <ul>
+            <li><strong>Manage Fatigue:</strong> Given any baseline tiredness or low vitamin levels, prioritize consistency over intensity. Start with just 2 strength sessions in your first week alongside the indoor walking pad, and move to 3 as your systemic stamina adapts.</li>
+            <li><strong>Symptom Rule:</strong> If any movement causes an uncomfortable pinch in your right shoulder or a deep pull in your lower back, stop immediately. Reset your alignment or reduce the movement's depth to keep it 100% pain-free.</li>
+        </ul>
+    </div>
+
 </body>
 </html>
